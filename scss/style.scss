@@ -26,16 +26,17 @@ dd {
 .body {
   position: relative;
   max-width: 1920px !important;
-
-  margin: 0 auto;
+  margin: auto;
   font-family: Gilroy;
 }
 .block {
+  max-width: 100%;
   width: 945px;
   margin: 0 auto;
 }
 .header {
   &__divider-line {
+    max-width: 100%;
     width: 941px;
     height: 1px;
     background: #828282;
@@ -81,7 +82,8 @@ dd {
     color: #070707;
   }
   &__image {
-    max-width: 945px;
+    max-width: 100%;
+    width: 945px;
     height: auto;
   }
   &__name {
@@ -157,14 +159,25 @@ dd {
   }
 }
 .skills {
-  height: 610px;
+  // height: 610px;
+  height: max-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 91px 0 110px 0;
+  @media (max-width: 800px) {
+    padding: 91px 0 18px 0;
+  }
   &__program-skill-blocks {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @media (max-width: 800px) {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
   }
   &__title {
     margin-bottom: 69px;
@@ -182,8 +195,12 @@ dd {
   width: 161px;
   height: 202px;
   position: relative;
+  @media (max-width: 800px) {
+    margin: 0 0 81px 0;
+  }
   &__image {
     height: 89px;
+    max-width: 100%;
     width: auto;
   }
   &__title {
@@ -220,12 +237,15 @@ dd {
   &__title {
     padding: 112px 0 48px 0;
   }
+  &__examples {
+  }
 }
 .site-example {
   text-align: center;
   height: 593px;
   margin-bottom: 96px;
   &__screenshot {
+    max-width: 100%;
     width: 936px;
     height: auto;
     margin-bottom: 45px;

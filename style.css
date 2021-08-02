@@ -30,16 +30,18 @@ dd {
 .body {
   position: relative;
   max-width: 1920px !important;
-  margin: 0 auto;
+  margin: auto;
   font-family: Gilroy;
 }
 
 .block {
+  max-width: 100%;
   width: 945px;
   margin: 0 auto;
 }
 
 .header__divider-line {
+  max-width: 100%;
   width: 941px;
   height: 1px;
   background: #828282;
@@ -91,7 +93,8 @@ dd {
   color: #070707;
 }
 .overview__image {
-  max-width: 945px;
+  max-width: 100%;
+  width: 945px;
   height: auto;
 }
 .overview__name {
@@ -182,7 +185,9 @@ dd {
 }
 
 .skills {
-  height: 610px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -193,6 +198,12 @@ dd {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 91px 0 110px 0;
+}
+@media (max-width: 800px) {
+  .skills {
+    padding: 91px 0 18px 0;
+  }
 }
 .skills__program-skill-blocks {
   display: -webkit-box;
@@ -205,6 +216,20 @@ dd {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media (max-width: 800px) {
+  .skills__program-skill-blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .skills__title {
   margin-bottom: 69px;
@@ -231,8 +256,14 @@ dd {
   height: 202px;
   position: relative;
 }
+@media (max-width: 800px) {
+  .program-rate-block {
+    margin: 0 0 81px 0;
+  }
+}
 .program-rate-block__image {
   height: 89px;
+  max-width: 100%;
   width: auto;
 }
 .program-rate-block__title {
@@ -271,13 +302,13 @@ dd {
 .portfolio__title {
   padding: 112px 0 48px 0;
 }
-
 .site-example {
   text-align: center;
   height: 593px;
   margin-bottom: 96px;
 }
 .site-example__screenshot {
+  max-width: 100%;
   width: 936px;
   height: auto;
   margin-bottom: 45px;
