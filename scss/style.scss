@@ -37,7 +37,7 @@ dd {
 .header {
   &__divider-line {
     max-width: 100%;
-    width: 941px;
+    width: 945px;
     height: 1px;
     background: #828282;
   }
@@ -50,7 +50,6 @@ dd {
   padding: 32px 0 32px 0;
   display: flex;
   justify-content: space-between;
-
   &__link {
     font-family: Gilroy;
     font-weight: 700;
@@ -121,22 +120,32 @@ dd {
     display: inline;
   }
 }
-.about {
-  height: 506px;
+.wrap-about {
   background: #f6f6f6;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+}
+.about {
+  padding: 120px 29px 107px 29px;
   &__title {
     margin-bottom: 18px;
   }
   &__subtitle {
+    max-width: 485px;
+    height: auto;
     display: flex;
-    width: 485px;
-    height: 218px;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
+  }
+  &__wrap-subtitle#first {
+    max-width: 470px;
+    margin-bottom: 50px;
+  }
+  &__wrap-subtitle#second {
+    max-width: 400px;
+  }
+  &__wrap-subtitle#third {
+    max-width: 320px;
+    margin-top: 50px;
   }
 }
 .title {
