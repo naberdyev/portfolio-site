@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,7 @@
 <body>
         <div class="body">
                 
-                <div class="header block">
+                <div class="header">
                     <nav class="menu">
                         <a href="#home" class="menu__link menu__link_active"><span>Home</span></a>
                         <a href="#about" class="menu__link menu__link_inactive"><span>About me</span></a>
@@ -19,12 +20,15 @@
                         <a href="#contacts" class="menu__link menu__link_inactive"><span>Contacts</span></a>
                     </nav>
                     <!-- сделать menu-dropdown-icon с помощью css (humburger to cross animation) -->
-                    <div class="header__menu-dropdown-icon header__menu-dropdown-icon_inactive"></div>
+                    <div class="menu-dropdown-icon menu-dropdown-icon_inactive">
+                        <div class="menu-dropdown-icon__stripe"></div>
+                        <div class="menu-dropdown-icon__stripe"></div>
+                        <div class="menu-dropdown-icon__stripe"></div>
+                    </div>
                     <div class="header__divider-line"></div>
                 </div>
                 <a id="home"></a>
                 <div class="overview block">
-                    <a id="home"></a>
                     <div class="overview__top-block">
                         <div class="overview__name">
                             Denis <br>
@@ -41,7 +45,10 @@
                             <div class="change-language__language change-language__language_active">Eng</div>
                         </div>
                     </div>
+                    <div class="overview__bottom-block">
                         <img class="overview__image" src="img/overview/1.png" alt="denis's photo">
+                    </div>
+                        
                 </div>
                 <a id="about"></a>
                 <div class="wrap-about">
@@ -190,5 +197,7 @@
                     </div>
                 </div>
         </div>
+
+        <script src="index.js"></script>
 </body>
 </html>

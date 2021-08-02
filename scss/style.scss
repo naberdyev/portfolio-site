@@ -25,7 +25,7 @@ dd {
 
 .body {
   position: relative;
-  max-width: 1920px !important;
+  // max-width: 1920px !important;
   margin: auto;
   font-family: Gilroy;
 }
@@ -35,19 +35,39 @@ dd {
   margin: 0 auto;
 }
 .header {
+  max-width: 945px;
+  margin: 0 auto;
   &__divider-line {
     max-width: 100%;
     width: 945px;
     height: 1px;
     background: #828282;
+    @media (max-width: 800px) {
+      display: none;
+    }
   }
-  &__menu-dropdown-icon {
+}
+.menu-dropdown-icon {
+  display: none;
+  width: 37px;
+  height: 33px;
+  position: fixed;
+  right: 30px;
+  top: 68px;
+  cursor: pointer;
+  &__stripe {
+    width: 33px;
+    height: 4px;
+    background: #000;
+    margin: 2px;
+    box-shadow: 0px 0px 5px white;
   }
-  &__menu-dropdown-icon_inactive {
+  @media (max-width: 800px) {
+    display: block;
   }
 }
 .menu {
-  padding: 32px 0 32px 0;
+  padding: 32px 10px 32px 10px;
   display: flex;
   justify-content: space-between;
   &__link {
@@ -63,15 +83,37 @@ dd {
   &__link_inactive {
     color: #828282;
   }
+  @media (max-width: 800px) {
+    display: none;
+  }
 }
 .overview {
+  position: relative;
   height: 680px;
   &__top-block {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    max-width: 100%;
     align-items: flex-end;
     padding: 40px 0 50px 0;
+    @media (max-width: 800px) {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 51px;
+      left: 26px;
+      padding: 0;
+    }
+  }
+  &__bottom-block {
+    max-width: 100%;
+    height: auto;
+    @media (max-width: 800px) {
+      content: "";
+      position: absolute;
+      top: 275px;
+      width: 100%;
+    }
   }
   &__bio {
     font-family: Gilroy;
@@ -81,9 +123,8 @@ dd {
     color: #070707;
   }
   &__image {
-    max-width: 100%;
-    width: 945px;
-    height: auto;
+    width: 100%;
+    margin: 0 29px;
   }
   &__name {
     font-family: Gilroy;
@@ -118,6 +159,9 @@ dd {
   }
   &__language_inactive {
     display: inline;
+  }
+  @media (max-width: 800px) {
+    display: none;
   }
 }
 .wrap-about {

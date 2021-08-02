@@ -29,7 +29,6 @@ dd {
 
 .body {
   position: relative;
-  max-width: 1920px !important;
   margin: auto;
   font-family: Gilroy;
 }
@@ -40,14 +39,47 @@ dd {
   margin: 0 auto;
 }
 
+.header {
+  max-width: 945px;
+  margin: 0 auto;
+}
 .header__divider-line {
   max-width: 100%;
   width: 945px;
   height: 1px;
   background: #828282;
 }
+@media (max-width: 800px) {
+  .header__divider-line {
+    display: none;
+  }
+}
+
+.menu-dropdown-icon {
+  display: none;
+  width: 37px;
+  height: 33px;
+  position: fixed;
+  right: 30px;
+  top: 68px;
+  cursor: pointer;
+}
+.menu-dropdown-icon__stripe {
+  width: 33px;
+  height: 4px;
+  background: #000;
+  margin: 2px;
+  -webkit-box-shadow: 0px 0px 5px white;
+          box-shadow: 0px 0px 5px white;
+}
+@media (max-width: 800px) {
+  .menu-dropdown-icon {
+    display: block;
+  }
+}
+
 .menu {
-  padding: 32px 0 32px 0;
+  padding: 32px 10px 32px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -68,8 +100,14 @@ dd {
 .menu__link_inactive {
   color: #828282;
 }
+@media (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+}
 
 .overview {
+  position: relative;
   height: 680px;
 }
 .overview__top-block {
@@ -79,11 +117,33 @@ dd {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
+  max-width: 100%;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
   padding: 40px 0 50px 0;
+}
+@media (max-width: 800px) {
+  .overview__top-block {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 51px;
+    left: 26px;
+    padding: 0;
+  }
+}
+.overview__bottom-block {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 800px) {
+  .overview__bottom-block {
+    content: "";
+    position: absolute;
+    top: 275px;
+    width: 100%;
+  }
 }
 .overview__bio {
   font-family: Gilroy;
@@ -93,9 +153,8 @@ dd {
   color: #070707;
 }
 .overview__image {
-  max-width: 100%;
-  width: 945px;
-  height: auto;
+  width: 100%;
+  margin: 0 29px;
 }
 .overview__name {
   font-family: Gilroy;
@@ -132,6 +191,11 @@ dd {
 }
 .change-language__language_inactive {
   display: inline;
+}
+@media (max-width: 800px) {
+  .change-language {
+    display: none;
+  }
 }
 
 .wrap-about {
