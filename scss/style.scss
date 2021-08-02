@@ -89,7 +89,7 @@ dd {
 }
 .overview {
   position: relative;
-  height: 680px;
+  height: auto;
   &__top-block {
     display: flex;
     justify-content: space-between;
@@ -99,20 +99,16 @@ dd {
     @media (max-width: 800px) {
       display: block;
       content: "";
-      position: absolute;
-      top: 51px;
-      left: 26px;
-      padding: 0;
+      padding: 56px 0px 37px 29px;
     }
   }
   &__bottom-block {
     max-width: 100%;
     height: auto;
+    margin: 0 0 104px 0;
     @media (max-width: 800px) {
       content: "";
-      position: absolute;
-      top: 275px;
-      width: 100%;
+      margin: 0 0 83px;
     }
   }
   &__bio {
@@ -124,7 +120,11 @@ dd {
   }
   &__image {
     width: 100%;
-    margin: 0 29px;
+    margin: 0 auto;
+    @media (max-width: 800px) {
+      width: 91%;
+      margin: 0 29px;
+    }
   }
   &__name {
     font-family: Gilroy;
@@ -133,6 +133,10 @@ dd {
     line-height: 59px;
     color: #070707;
   }
+  // @media (max-width: 800px) {
+  //   //// переделать на relative, чтобы высота сама подбиралась
+  //   height: 100wp;
+  // }
 }
 .change-language {
   padding-top: 43px;

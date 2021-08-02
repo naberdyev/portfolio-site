@@ -108,7 +108,7 @@ dd {
 
 .overview {
   position: relative;
-  height: 680px;
+  height: auto;
 }
 .overview__top-block {
   display: -webkit-box;
@@ -127,22 +127,18 @@ dd {
   .overview__top-block {
     display: block;
     content: "";
-    position: absolute;
-    top: 51px;
-    left: 26px;
-    padding: 0;
+    padding: 56px 0px 37px 29px;
   }
 }
 .overview__bottom-block {
   max-width: 100%;
   height: auto;
+  margin: 0 0 104px 0;
 }
 @media (max-width: 800px) {
   .overview__bottom-block {
     content: "";
-    position: absolute;
-    top: 275px;
-    width: 100%;
+    margin: 0 0 83px;
   }
 }
 .overview__bio {
@@ -154,7 +150,13 @@ dd {
 }
 .overview__image {
   width: 100%;
-  margin: 0 29px;
+  margin: 0 auto;
+}
+@media (max-width: 800px) {
+  .overview__image {
+    width: 91%;
+    margin: 0 29px;
+  }
 }
 .overview__name {
   font-family: Gilroy;
