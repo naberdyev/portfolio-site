@@ -102,15 +102,6 @@ dd {
       padding: 56px 0px 37px 29px;
     }
   }
-  &__bottom-block {
-    max-width: 100%;
-    height: auto;
-    margin: 0 0 104px 0;
-    @media (max-width: 800px) {
-      content: "";
-      margin: 0 0 83px;
-    }
-  }
   &__bio {
     font-family: Gilroy;
     font-size: 18px;
@@ -118,13 +109,19 @@ dd {
     font-weight: 500;
     color: #070707;
   }
+  &__bottom-block {
+    margin: 0 0 104px 0;
+    height: 387px;
+    @media (max-width: 800px) {
+      height: fit-content;
+      margin: 0 29px 83px;
+    }
+  }
   &__image {
     width: 100%;
-    margin: 0 auto;
-    @media (max-width: 800px) {
-      width: 91%;
-      margin: 0 29px;
-    }
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 10%;
   }
   &__name {
     font-family: Gilroy;
