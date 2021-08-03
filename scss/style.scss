@@ -345,15 +345,27 @@ a {
 
 .contacts {
   text-align: center;
-  height: 622px;
+  padding: 114px 0 123px 0;
+  @media (max-width: 800px) {
+    padding: 82px 0 90px 0;
+  }
   &__title {
-    padding: 114px 0 20px 0;
+    padding-bottom: 20px;
+    @media (max-width: 800px) {
+      padding-bottom: 27px;
+    }
   }
   &__subtitle {
     padding-bottom: 30px;
+    @media (max-width: 800px) {
+      padding-bottom: 40px;
+    }
   }
   &__button {
     margin-bottom: 86px;
+    @media (max-width: 800px) {
+      margin-bottom: 48px;
+    }
   }
 }
 button {
@@ -378,6 +390,9 @@ button {
     max-width: 342px;
     display: flex;
     justify-content: space-between;
+    @media (max-width: 800px) {
+      margin-bottom: 48px;
+    }
   }
   &__icon {
     width: 40px;
