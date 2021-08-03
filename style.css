@@ -27,6 +27,10 @@ dd {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .body {
   position: relative;
   margin: auto;
@@ -92,7 +96,6 @@ dd {
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
-  text-decoration: none;
 }
 .menu__link_active {
   color: #070707;
@@ -397,22 +400,25 @@ dd {
 }
 .portfolio__examples {
   margin: 0 auto;
-  max-width: 945px;
+  max-width: 925px;
+}
+.portfolio__examples div.site-example {
+  margin-bottom: 99px;
+  padding: 0 10px;
+}
+@media (max-width: 800px) {
+  .portfolio__examples div.site-example {
+    margin-bottom: 78px;
+    padding: 0 30px;
+  }
+}
+.portfolio__examples div.site-example:last-child {
+  margin-bottom: 0;
 }
 
 .site-example {
   text-align: center;
-  margin-bottom: 99px;
   padding: 0 30px;
-}
-@media (max-width: 800px) {
-  .site-example {
-    margin-bottom: 78px;
-    padding: 0 30px;
-  }
-  .site-example:last-child {
-    margin-bottom: 0px;
-  }
 }
 .site-example__screenshot {
   max-width: 100%;
@@ -475,9 +481,6 @@ button {
 .social-media-links__icon {
   width: 40px;
   height: 40px;
-}
-.social-media-links__link {
-  text-decoration: none;
 }
 .social-media-links__subtitle {
   font-family: Gilroy;

@@ -21,6 +21,9 @@ dl,
 dd {
   margin: 0;
 }
+a {
+  text-decoration: none;
+}
 //////////////end delete margin////////////
 
 .body {
@@ -75,7 +78,7 @@ dd {
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
-    text-decoration: none;
+    // text-decoration: none;
   }
   &__link_active {
     color: #070707;
@@ -306,19 +309,22 @@ dd {
   }
   &__examples {
     margin: 0 auto;
-    max-width: 945px;
+    max-width: 925px;
+    & div.site-example {
+      margin-bottom: 99px;
+      padding: 0 10px;
+      @media (max-width: 800px) {
+        margin-bottom: 78px;
+        padding: 0 30px;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 }
 .site-example {
   text-align: center;
-  margin-bottom: 99px;
-  @media (max-width: 800px) {
-    margin-bottom: 78px;
-    padding: 0 30px;
-    &:last-child {
-      margin-bottom: 0px;
-    }
-  }
   padding: 0 30px;
   &__screenshot {
     max-width: 100%;
@@ -378,7 +384,7 @@ button {
     height: 40px;
   }
   &__link {
-    text-decoration: none;
+    // text-decoration: none;
   }
   &__subtitle {
     font-family: Gilroy;
