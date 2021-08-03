@@ -293,22 +293,33 @@ dd {
   }
 }
 .portfolio {
-  height: 2253px;
   background: #f6f6f6;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
+  padding: 112px 0 96px 0;
+  @media (max-width: 800px) {
+    padding: 81px 0 81px 0;
+  }
   &__title {
-    padding: 112px 0 48px 0;
+    padding: 0 0 48px 0;
+    @media (max-width: 800px) {
+      padding: 0 0 65px 0;
+    }
   }
   &__examples {
+    margin: 0 auto;
+    max-width: 945px;
   }
 }
 .site-example {
   text-align: center;
-  height: 593px;
-  margin-bottom: 96px;
+  margin-bottom: 99px;
+  @media (max-width: 800px) {
+    margin-bottom: 78px;
+    padding: 0 30px;
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+  padding: 0 30px;
   &__screenshot {
     max-width: 100%;
     width: 936px;
