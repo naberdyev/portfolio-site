@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <base href="https://denisnovikov.netlify.app/">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Denis Novik  UX | UI designer</title>
+    <title>Денис Новик  UX | UI дизайнер</title>
 </head>
 <body>
     <div class="mobile-menu">
         <nav class="menu mobile-menu__nav">
-            <a href="#home" class="menu__link mobile-menu__link menu__link_active"><span>Home</span></a>
-            <a href="#about" class="menu__link mobile-menu__link"><span>About me</span></a>
-            <a href="#skills" class="menu__link mobile-menu__link"><span>Skills</span></a>
-            <a href="#portfolio" class="menu__link mobile-menu__link"><span>Portfolio</span></a>
-            <a href="#contacts" class="menu__link mobile-menu__link"><span>Contacts</span></a>
-        </nav>  
+            <a href="ru/index.html#home" class="menu__link mobile-menu__link menu__link_active"><span>Домой</span></a>
+            <a href="ru/index.html#about" class="menu__link mobile-menu__link"><span>Обо мне</span></a>
+            <a href="ru/index.html#skills" class="menu__link mobile-menu__link"><span>Навыки</span></a>
+            <a href="ru/index.html#portfolio" class="menu__link mobile-menu__link"><span>Портфолио</span></a>
+            <a href="ru/index.html#contacts" class="menu__link mobile-menu__link"><span>Контакты</span></a>
+        </nav>
         <div class="change-language mobile-menu__change-language">
-            <a href="ru/index.html" class="change-language__language mobile-menu__language">
-            Ru
-            </a>
+            <div class="change-language__language mobile-menu__language change-language__language_active">Ru</div>
             <div class="change-language__divider mobile-menu__language">|</div>
-            <div class="change-language__language mobile-menu__language change-language__language_active">Eng</div>
+            <a class="change-language__language mobile-menu__language" href="index.html">
+                Eng
+            </a>
         </div>
     </div>
     <a id="hamburger-icon" href="#" title="Menu">
@@ -34,11 +35,11 @@
                 
                 <div class="header">
                     <nav class="menu menu_desktop">
-                        <a href="#home" class="menu__link menu__link_active"><span>Home</span></a>
-                        <a href="#about" class="menu__link"><span>About me</span></a>
-                        <a href="#skills" class="menu__link"><span>Skills</span></a>
-                        <a href="#portfolio" class="menu__link"><span>Portfolio</span></a>
-                        <a href="#contacts" class="menu__link"><span>Contacts</span></a>
+                        <a href="#home" class="menu__link menu__link_active"><span>Домой</span></a>
+                        <a href="#about" class="menu__link"><span>Обо мне</span></a>
+                        <a href="#skills" class="menu__link"><span>Навыки</span></a>
+                        <a href="#portfolio" class="menu__link"><span>Портфолио</span></a>
+                        <a href="#contacts" class="menu__link"><span>Контакты</span></a>
                     </nav>   
                 <div class="header__divider-line"></div>
                 </div>
@@ -46,20 +47,20 @@
                 <div class="overview block">
                     <div class="overview__top-block">
                         <div class="overview__name">
-                            Denis <br>
-                            Novik</div>
+                            Денис <br>
+                            Новик</div>
                         <div class="overview__bio">
                             <p>
-                                UX | UI designer <br>
-                                24 years old, Minsk
+                                UX | UI дизайнер <br>
+                                24 года, Минск
                             </p>                 
                         </div>
                         <div class="change-language change-language_desktop">
-                            <a href="ru/index.html" class="change-language__language">
-                            Ru
-                            </a>
+                            <div class="change-language__language change-language__language_active">Ru</div>
                             <div class="change-language__divider">|</div>
-                            <div class="change-language__language change-language__language_active">Eng</div>
+                            <a class="change-language__language" href="index.html">
+                                Eng
+                            </a>
                         </div>
                     </div>
                     <div class="overview__bottom-block">
@@ -71,17 +72,17 @@
                 <div class="wrap-about">
                     <div class="about">
                         <div class="title about__title">
-                            <h2 class="title__text">About me</h2>
+                            <h2 class="title__text">Обо мне</h2>
                         </div>
                         <div class="subtitle about__subtitle">
                             <div class="about__wrap-subtitle" id="first">
-                                <p class="subtitle__text">Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.</p>
+                                <p class="subtitle__text">Привет, я Денис - UX/UI дизайнер из Минска. Мне интересен дизайн и все что с ним связано.</p>
                             </div>
                             <div class="about__wrap-subtitle" id="second">
-                                <p class="subtitle__text">I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</p>
+                                <p class="subtitle__text">Я учусь на курсах "Web and mobile design interfaces" в IT-Academy.</p>
                             </div>
                             <div class="about__wrap-subtitle" id="third">
-                                <p class="subtitle__text">Ready to implement excellent projects with wonderful people.</p>
+                                <p class="subtitle__text">Готов претворять в жизнь отличные проекты с прекрасными людьми.</p>
                             </div>
                         </div>
                     </div>
@@ -89,10 +90,10 @@
                 <a id="skills"></a>
                 <div class="skills">
                     <div class="title skills__title">
-                        <h1 class="title__text">Skills</h1>
+                        <h1 class="title__text">Навыки</h1>
                     </div>
                     <div class="subtitle skills__subtitle">
-                        <p class="subtitle__text">I work in such programs as</p>
+                        <p class="subtitle__text">Я работаю в таких программах как</p>
                     </div>
                     <div class="skills__program-skill-blocks">
                         <div class="program-rate-block">
@@ -156,7 +157,7 @@
                 <div class="portfolio">
                     <div class="title portfolio__title">
                         <h2 class="title__text">
-                            Portfolio
+                            Портфолио
                         </h2> 
                     </div>
                     <div class="portfolio__examples">
@@ -178,17 +179,17 @@
                 <div class="contacts block">
                     <div class="title contacts__title">
                         <h2 class="title__text">
-                            Contacts
+                            Контакты
                         </h2> 
                     </div>
                     <div class="subtitle contacts__subtitle">
                         <p class="subtitle__text">
-                            Want to know more or just chat?<br>
-                            You are welcome!
+                            Хотите узнать больше или просто пообщаться?<br>
+                            Пишите!
                         </p>
                     </div>
                     <button class="contacts__button">
-                        Send message
+                        Написать
                     </button>
                     <div class="social-media-links">
                         <div class="social-media-links__item-row">
@@ -207,7 +208,7 @@
                         </div>
                         
                         <div class="social-media-links__subtitle">
-                            Like me on <br>
+                            Посетите мои страницы на <br>
                             LinkedIn, Instagram, Behance, Dribble
                         </div>
                     </div>
