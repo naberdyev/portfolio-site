@@ -436,6 +436,7 @@ $translateX: 0;
     transition: all $transition-time;
     -webkit-transition: all $transition-time;
     -moz-transition: all $transition-time;
+    box-shadow: 0px 0px 5px gray;
 
     &.line-1 {
       top: 0;
