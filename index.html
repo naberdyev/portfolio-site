@@ -10,7 +10,13 @@
 </head>
 <body>
     <div class="mobile-menu">
-                    
+        <nav class="menu mobile-menu__nav">
+            <a href="#home" class="menu__link mobile-menu__link menu__link_active"><span>Home</span></a>
+            <a href="#about" class="menu__link mobile-menu__link"><span>About me</span></a>
+            <a href="#skills" class="menu__link mobile-menu__link"><span>Skills</span></a>
+            <a href="#portfolio" class="menu__link mobile-menu__link"><span>Portfolio</span></a>
+            <a href="#contacts" class="menu__link mobile-menu__link"><span>Contacts</span></a>
+        </nav>  
     </div>
     <a id="hamburger-icon" href="#" title="Menu">
         <span class="line line-1"></span>
@@ -20,17 +26,14 @@
         <div class="body">
                 
                 <div class="header">
-                    <nav class="menu">
+                    <nav class="menu menu_desktop">
                         <a href="#home" class="menu__link menu__link_active"><span>Home</span></a>
-                        <a href="#about" class="menu__link menu__link_inactive"><span>About me</span></a>
-                        <a href="#skills" class="menu__link menu__link_inactive"><span>Skills</span></a>
-                        <a href="#portfolio" class="menu__link menu__link_inactive"><span>Portfolio</span></a>
-                        <a href="#contacts" class="menu__link menu__link_inactive"><span>Contacts</span></a>
-                    </nav>
-                    <!-- сделать menu-dropdown-icon с помощью css (humburger to cross animation) -->
-                    
-                    
-                    <div class="header__divider-line"></div>
+                        <a href="#about" class="menu__link"><span>About me</span></a>
+                        <a href="#skills" class="menu__link"><span>Skills</span></a>
+                        <a href="#portfolio" class="menu__link"><span>Portfolio</span></a>
+                        <a href="#contacts" class="menu__link"><span>Contacts</span></a>
+                    </nav>   
+                <div class="header__divider-line"></div>
                 </div>
                 <a id="home"></a>
                 <div class="overview block">
