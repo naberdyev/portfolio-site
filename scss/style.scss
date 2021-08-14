@@ -3,6 +3,7 @@
 
 $fontFamily: "Gilroy";
 $fontSize: 16;
+$mobileWidth: 800px;
 
 ////////////////////////////////delete margin/////////////////
 body,
@@ -45,30 +46,20 @@ a {
     width: 945px;
     height: 1px;
     background: #828282;
-    @media (max-width: 800px) {
+    @media (max-width: $mobileWidth) {
       display: none;
     }
   }
 }
-.menu-dropdown-icon {
-  display: none;
-  width: 37px;
-  height: 33px;
-  position: fixed;
-  right: 30px;
-  top: 68px;
-  cursor: pointer;
-  &__stripe {
-    width: 33px;
-    height: 4px;
-    background: #000;
-    margin: 2px;
-    box-shadow: 0px 0px 5px white;
-  }
-  @media (max-width: 800px) {
-    display: block;
-  }
-}
+// .menu-dropdown-icon {
+//   // &__stripe {
+//   //   width: 33px;
+//   //   height: 4px;
+//   //   background: #000;
+//   //   margin: 2px;
+//   //   box-shadow: 0px 0px 5px white;
+//   // }
+// }
 .menu {
   padding: 32px 10px 32px 10px;
   display: flex;
@@ -86,7 +77,7 @@ a {
   &__link_inactive {
     color: #828282;
   }
-  @media (max-width: 800px) {
+  @media (max-width: $mobileWidth) {
     display: none;
   }
 }
@@ -99,7 +90,7 @@ a {
     max-width: 100%;
     align-items: flex-end;
     padding: 40px 0 50px 0;
-    @media (max-width: 800px) {
+    @media (max-width: $mobileWidth) {
       display: block;
       content: "";
       padding: 56px 0px 37px 29px;
@@ -115,7 +106,7 @@ a {
   &__bottom-block {
     margin: 0 0 104px 0;
     height: 387px;
-    @media (max-width: 800px) {
+    @media (max-width: $mobileWidth) {
       height: fit-content;
       margin: 0 29px 83px;
     }
@@ -133,10 +124,6 @@ a {
     line-height: 59px;
     color: #070707;
   }
-  // @media (max-width: 800px) {
-  //   //// переделать на relative, чтобы высота сама подбиралась
-  //   height: 100wp;
-  // }
 }
 .change-language {
   padding-top: 43px;
@@ -164,7 +151,7 @@ a {
   &__language_inactive {
     display: inline;
   }
-  @media (max-width: 800px) {
+  @media (max-width: $mobileWidth) {
     display: none;
   }
 }
@@ -173,7 +160,7 @@ a {
 }
 .about {
   padding: 120px 29px 107px 29px;
-  @media (max-width: 800px) {
+  @media (max-width: $mobileWidth) {
     padding: 81px 30px 76px 30px;
   }
   &__title {
@@ -227,22 +214,24 @@ a {
   justify-content: center;
   padding: 91px 10px 110px 10px;
   margin: 0 auto;
-  @media (max-width: 800px) {
+  @media (max-width: $mobileWidth) {
     padding: 83px 73px 99px 73px;
   }
   &__program-skill-blocks {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-    @media (max-width: 800px) {
+    @media (max-width: 600px) {
       display: flex;
       flex-direction: column;
+      flex-wrap: nowrap;
       align-items: center;
     }
   }
   &__title {
     margin-bottom: 69px;
-    @media (max-width: 800px) {
+    @media (max-width: $mobileWidth) {
       margin-bottom: 50px;
     }
   }
@@ -260,7 +249,7 @@ a {
   width: 161px;
   height: 202px;
   position: relative;
-  @media (max-width: 800px) {
+  @media (max-width: $mobileWidth) {
     margin: 0 0 81px 0;
     &:last-child {
       margin: 0;
@@ -298,12 +287,12 @@ a {
 .portfolio {
   background: #f6f6f6;
   padding: 112px 0 96px 0;
-  @media (max-width: 800px) {
+  @media (max-width: $mobileWidth) {
     padding: 81px 0 81px 0;
   }
   &__title {
     padding: 0 0 48px 0;
-    @media (max-width: 800px) {
+    @media (max-width: $mobileWidth) {
       padding: 0 0 65px 0;
     }
   }
@@ -313,7 +302,7 @@ a {
     & div.site-example {
       margin-bottom: 99px;
       padding: 0 10px;
-      @media (max-width: 800px) {
+      @media (max-width: $mobileWidth) {
         margin-bottom: 78px;
         padding: 0 30px;
       }
@@ -346,24 +335,24 @@ a {
 .contacts {
   text-align: center;
   padding: 114px 0 123px 0;
-  @media (max-width: 800px) {
+  @media (max-width: $mobileWidth) {
     padding: 82px 0 90px 0;
   }
   &__title {
     padding-bottom: 20px;
-    @media (max-width: 800px) {
+    @media (max-width: $mobileWidth) {
       padding-bottom: 27px;
     }
   }
   &__subtitle {
     padding-bottom: 30px;
-    @media (max-width: 800px) {
+    @media (max-width: $mobileWidth) {
       padding-bottom: 40px;
     }
   }
   &__button {
     margin-bottom: 86px;
-    @media (max-width: 800px) {
+    @media (max-width: $mobileWidth) {
       margin-bottom: 48px;
     }
   }
@@ -390,7 +379,7 @@ button {
     max-width: 342px;
     display: flex;
     justify-content: space-between;
-    @media (max-width: 800px) {
+    @media (max-width: $mobileWidth) {
       margin-bottom: 48px;
     }
   }
@@ -408,5 +397,85 @@ button {
     line-height: 17px;
     text-align: center;
     color: #828282;
+  }
+}
+
+$color: black;
+$height-icon: 33px;
+$width-line: 37px;
+$height-line: 4px;
+
+$transition-time: 0.4s;
+$rotation: 45deg;
+$translateY: ($height-icon / 2);
+$translateX: 0;
+
+#hamburger-icon {
+  display: none;
+  width: 37px;
+  height: 33px;
+  position: fixed;
+  right: 30px;
+  top: 68px;
+  @media (max-width: $mobileWidth) {
+    display: block;
+    z-index: 1;
+  }
+
+  .line {
+    display: block;
+    background: $color;
+    width: $width-line;
+    height: $height-line;
+    position: absolute;
+    left: 0;
+    border-radius: ($height-line / 2);
+    transition: all $transition-time;
+    -webkit-transition: all $transition-time;
+    -moz-transition: all $transition-time;
+
+    &.line-1 {
+      top: 0;
+    }
+    &.line-2 {
+      top: 50%;
+    }
+    &.line-3 {
+      top: 100%;
+    }
+  }
+  &:hover,
+  &:focus {
+    .line-1 {
+      transform: translateY($height-line / 2 * -1);
+      -webkit-transform: translateY($height-line / 2 * -1);
+      -moz-transform: translateY($height-line / 2 * -1);
+    }
+    .line-3 {
+      transform: translateY($height-line / 2);
+      -webkit-transform: translateY($height-line / 2);
+      -moz-transform: translateY($height-line / 2);
+    }
+  }
+  &.active {
+    .line-1 {
+      transform: translateY($translateY) translateX($translateX)
+        rotate($rotation);
+      -webkit-transform: translateY($translateY) translateX($translateX)
+        rotate($rotation);
+      -moz-transform: translateY($translateY) translateX($translateX)
+        rotate($rotation);
+    }
+    .line-2 {
+      opacity: 0;
+    }
+    .line-3 {
+      transform: translateY($translateY * -1) translateX($translateX)
+        rotate($rotation * -1);
+      -webkit-transform: translateY($translateY * -1) translateX($translateX)
+        rotate($rotation * -1);
+      -moz-transform: translateY($translateY * -1) translateX($translateX)
+        rotate($rotation * -1);
+    }
   }
 }
