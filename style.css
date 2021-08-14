@@ -592,8 +592,8 @@ button {
 }
 .mobile-menu__change-language {
   position: fixed;
-  bottom: 57px;
-  right: 28px;
+  bottom: 80px;
+  right: 10px;
 }
 .mobile-menu__language {
   font-size: 34px;
